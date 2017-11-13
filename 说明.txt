@@ -1,0 +1,18 @@
+1。将一个网页分为多个模块，通过模块整合来达到模块话网页的案例
+2用vue + vue-router路由通过整合
+3.将各个元素分为各个模块，通过建立vue文件，将各个模块分开，通过export导出，
+4.通过main.js 接受各个模块导出的东西。new VueRouter来进行spa(单页面应用程序)的处理
+5.使用路由的步骤
+    1）声明路由组件
+        即要用到的，如Cart,Home,List,Me等
+    2）定义路由
+        const routes=[
+                    {path:"/foo",component:Foo},
+                    {path:"/bar",component:Bar}
+                ]
+
+     3）创建路由实例
+         const router = new VueRouter({
+            routes
+         })
+     4)将路由实例挂载 router到Vue对象上
